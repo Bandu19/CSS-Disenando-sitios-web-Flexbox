@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Padre*/
+
+.contenedor {
+    width: 80%;
+    height: 500px;
+    max-width: 700px;
+    background: #212d40;
+    /*Propiedad Nueva de Flex*/
+    display: flex;
+    /*ESTE HACE QUE LAS CAJAS SE INVIERTEN
+      
+     flex-direction: row-reverse;*/
+    /*ESTE HACE QUE LAS CAJAS SE POCISIONEN EN COLUMNA
+
+     flex-direction: column;*/
+    flex-direction: row;
+    /*Lo que hace grap junto con el row esque
+        hace que las cajas no  pierdan su ancho
+        y este crea otra fila dependiendo del 
+        contenedor
+         
+    flex-flow: row wrap;
+    Esta propiedad es igual a flex-direction y flex-wrap 
+
+        */
+    flex-wrap: wrap;
+    /*TIPOS DE JUSTIFY-CONTENT*/
+    /*
+    justify-content: flex-end;
+    */
+    /*
+    justify-content: center;
+    */
+    /*
+    justify-content: space-between;
+    */
+    justify-content: space-between;
+    /*PROPIEDAD ALIGN-ITMES*/
+    /*
+    align-items: flex-end;
+    */
+    /*
+    align-items: stretch;
+    */
+    /*
+    align-items: baseline;
+    */
+    align-content: space-around;
+}
+
+
+/*Hijos*/
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.uno {
+    font-size: 50px;
+}
