@@ -26,6 +26,7 @@ body {
 
      flex-direction: column;*/
     flex-direction: row;
+    flex-wrap: wrap;
     /*Lo que hace grap junto con el row esque
         hace que las cajas no  pierdan su ancho
         y este crea otra fila dependiendo del 
@@ -35,7 +36,8 @@ body {
     Esta propiedad es igual a flex-direction y flex-wrap 
 
         */
-    flex-wrap: wrap;
+    /*
+    flex-wrap: wrap;*/
     /*TIPOS DE JUSTIFY-CONTENT*/
     /*
     justify-content: flex-end;
@@ -46,7 +48,7 @@ body {
     /*
     justify-content: space-between;
     */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     /*PROPIEDAD ALIGN-ITMES*/
     /*
     align-items: flex-end;
@@ -57,7 +59,7 @@ body {
     /*
     align-items: baseline;
     */
-    align-content: space-around;
+    /*align-content: space-around;*/
 }
 
 

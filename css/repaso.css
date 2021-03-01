@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(175, 136, 175);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+header {
+    background: #23001E;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    float: left;
+    color: #f2f2f2;
+    padding: 20px;
+    font-weight: 900;
+    transition: background 1s ease;
+}
+
+header nav ul li a:hover {
+    background: #CC340E;
+}
+
+header nav ul li a:active {
+    background: #0ECC91;
+}
+
+.main {
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.caja {
+    transition: all 1s ease;
+}
+
+.caja:hover {
+    background: #05132D;
+}
+
+.caja h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 1s ease;
+}
+
+.caja h1:hover {
+    background: #CC340E;
+    color: #f2f2f2;
+    border: 1px solid #CC340E;
+}
+
+.caja h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-bottom: 1px solid #23001E;
+    transition: all 1s ease;
+}
+
+.efectos h2:hover {
+    color: #CC340E;
+    border-bottom: 1px solid #CC340E;
+}
+
+@keyframes animacion {
+    0% {
+        color: #CC340E;
+    }
+    15% {
+        color: #2ECC0E;
+    }
+    25% {
+        color: #0ECC91;
+    }
+    50% {
+        color: #0E64CC;
+    }
+    75% {
+        color: #ff0707;
+    }
+    100% {
+        color: #CC340E;
+    }
+}
+
+.efectos p {
+    transition: color 1s ease;
+}
+
+.efectos p:hover {
+    color: #f2f2f2;
+}
+
+.efectos:hover {
+    color: #CC340E;
+}
+
+.efectos p strong:hover {
+    animation: animacion 5s ease infinite;
+}
+
+.caja .imagen {
+    width: 100%;
+}
+
+.caja p {
+    margin: 20px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.caja .imagen img {
+    width: 100%;
+    background: no-repeat fixed center center;
+    vertical-align: top;
+}
+
+.caja2 h2 {
+    margin: 10px 20px;
+    padding: 20px;
+    border-bottom: 2px solid #23001E;
+}
+
+.caja2 {
+    transition: background 1s ease;
+}
+
+.caja2:hover {
+    background: #05132D;
+    color: #f2f2f2;
+}
+
+.caja2 {
+    width: 50%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.caja2 .imagen2 {
+    padding: 20px;
+}
+
+.caja2 .imagen2 img {
+    background: no-repeat fixed center center;
+}
+
+.caja3 {
+    width: 50%;
+    float: left;
+    background: #05132D;
+    color: #f2f2f2;
+    transition: background 1s ease;
+}
+
+.caja3:hover {
+    background: #f2f2f2;
+    color: #05132D;
+}
+
+.caja3 h2 {
+    margin: 10px 20px;
+    margin-bottom: 2px;
+    padding: 20px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.caja3 p {
+    padding: 20px;
+    line-height: 27px;
+}
+
+.caja3 .imagen3 {
+    width: 100%;
+    padding: 20px 20px 5px 20px;
+}
+
+.caja3 .imagen3 img {
+    background: no-repeat fixed center center;
+    margin: 20px 20px 5px 20px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background: #23001E;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    font-weight: 900;
+    transition: all 1s ease;
+}
+
+footer:hover {
+    background: #CC340E;
+}
