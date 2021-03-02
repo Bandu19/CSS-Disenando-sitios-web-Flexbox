@@ -90,19 +90,20 @@ body {
     flex: 1 1 auto;
 }
 
-.dos {
-    /*
+
+/*
     Mueve la caja en el centro de tu 
     align-self: center;
     */
-    /*
+
+
+/*
     Estos siempre  van juntos  para que puedan 
     hacer cambios 
     align-self: stretch;
     height: auto;
 
     */
-}
 
 
 /*
