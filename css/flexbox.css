@@ -14,21 +14,21 @@ body {
 
 .contenedor {
     width: 80%;
-    /*
     height: 500px;
-    */
     max-width: 700px;
     background: #212d40;
     /*Propiedad Nueva de Flex*/
     display: flex;
+    flex-flow: row wrap;
     /*ESTE HACE QUE LAS CAJAS SE INVIERTEN
       
      flex-direction: row-reverse;*/
     /*ESTE HACE QUE LAS CAJAS SE POCISIONEN EN COLUMNA
 
      flex-direction: column;*/
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+        flex-wrap: wrap;
+    */
     /*Lo que hace grap junto con el row esque
         hace que las cajas no  pierdan su ancho
         y este crea otra fila dependiendo del 
@@ -84,8 +84,24 @@ body {
     /*FLEX GROW HACE QUE TUS CAJAS  CUANDO SEAN 
     MAYORES LO QUE PASA ES CREAN UNA FILA MAS
     Y TOMA EL 100% DE ANCHO  */
-    flex-grow: 1;
-    flex-shrink: ;
+    /*
+        flex-grow: 1;
+    */
+    flex: 1 1 auto;
+}
+
+.dos {
+    /*
+    Mueve la caja en el centro de tu 
+    align-self: center;
+    */
+    /*
+    Estos siempre  van juntos  para que puedan 
+    hacer cambios 
+    align-self: stretch;
+    height: auto;
+
+    */
 }
 
 
@@ -101,5 +117,21 @@ body {
 
     .tres {
         order: 1;
+    }
+*/
+
+
+/*
+    .dos {
+        flex-shrink: 0;
+        flex-grow: 2;
+       
+        width: 12.5rem;
+        se puede remplazar por 
+        
+        flex-basis: 12.rem;
+        /*Se puede remplazar  de otra forma como
+            flex:1 1 auto;
+      
     }
 */
