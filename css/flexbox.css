@@ -14,7 +14,9 @@ body {
 
 .contenedor {
     width: 80%;
+    /*
     height: 500px;
+    */
     max-width: 700px;
     background: #212d40;
     /*Propiedad Nueva de Flex*/
@@ -60,13 +62,17 @@ body {
     align-items: baseline;
     */
     /*align-content: space-around;*/
+    justify-content: space-between;
+    /*CENTRARLO EN MODO COLUMNA*/
+    /*align-items: center;*/
+    align-content: center;
 }
 
 
 /*Hijos*/
 
 .caja {
-    width: 100px;
+    width: 150px;
     height: 100px;
     background: #f79256;
     text-align: center;
@@ -74,8 +80,26 @@ body {
     padding: 20px;
     font-size: 40px;
     color: #fff;
+    /* order: 1;*/
+    /*FLEX GROW HACE QUE TUS CAJAS  CUANDO SEAN 
+    MAYORES LO QUE PASA ES CREAN UNA FILA MAS
+    Y TOMA EL 100% DE ANCHO  */
+    flex-grow: 1;
+    flex-shrink: ;
 }
 
-.uno {
-    font-size: 50px;
-}
+
+/*
+    .uno {
+        /*Order es muy importante. para el acomodo
+        order: 3;
+    }
+
+    .dos {
+        order: 2;
+    }
+
+    .tres {
+        order: 1;
+    }
+*/
