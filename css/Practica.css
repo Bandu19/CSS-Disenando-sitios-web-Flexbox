@@ -1,0 +1,300 @@
+            @font-face {
+                font-family: "OpenSans";
+                src: url(../fonts/OpenSans-SemiBold.ttf);
+            }
+            /*Esta forma solo se hace en 
+practicas, cosas mucho mayores 
+son mas.*/
+            
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: "OpenSans", Arial, Helvetica, sans-serif;
+                background: #000 url(../img/fondo_body.jpg) fixed no-repeat center center;
+                background-size: cover;
+            }
+            /*ESTE CONTEENEDOR TIENE UN TRUCASO BIEN CHIDORIS
+TE RECOMIENDO QUE QUITES LO DE FLEX
+PARA QUE VEAS EL CAMBIO*/
+            
+            .contenedor {
+                margin: auto;
+                width: 90%;
+                max-width: 1000px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            header {
+                width: 100%;
+                padding: 20px 0;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: #05132D;
+                border-radius: 10px;
+            }
+            
+            header .menu a {
+                color: #f2f2f2;
+                border-radius: 5px;
+                border: 2px solid #df4c27;
+                text-decoration: none;
+                margin-right: 10px;
+                padding: 15px;
+                font-size: 18px;
+                transition: background 1s ease;
+            }
+            
+            header .menu a:hover {
+                background: #df4c27;
+            }
+            
+            header .menu a:active {
+                background: #0ECC91;
+                border: 1px solid #0ECC91;
+            }
+            
+            .main {
+                width: 70%;
+                background: #fff;
+                padding: 20px;
+            }
+            
+            .main article .thumb {
+                margin-bottom: 20px;
+            }
+            
+            .main article .thumb img {
+                width: 100%;
+                vertical-align: top;
+            }
+            
+            .main article h2 {
+                margin-bottom: 20px;
+                font-weight: normal;
+                color: rgb(129, 127, 127);
+                font-size: 32px;
+            }
+            
+            .main article p {
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 27px;
+            }
+            
+            aside {
+                width: 30%;
+                background: #23001E;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                opacity: .8;
+            }
+            
+            aside .ad {
+                font-size: 30px;
+                text-align: center;
+                color: #000;
+                padding: 50px 0;
+                margin-bottom: 15px;
+                background: #f2f2f2;
+            }
+            
+            aside .parrafo {
+                width: 100%;
+                color: #f2f2f2;
+            }
+            
+            aside .parrafo h3 {
+                color: #df4c27;
+                border-bottom: 1px solid #df4c27;
+                margin-bottom: 20px;
+            }
+            
+            aside .parrafo ul {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+            
+            aside .parrafo ul li {
+                padding-bottom: 5px;
+                list-style: none;
+                border-bottom: 1px solid #f2f2f2;
+                margin-bottom: 15px;
+                transition: all 1s ease;
+            }
+            
+            aside .parrafo ul li:hover {
+                border-bottom: 1px solid #df4c27;
+            }
+            
+            aside .parrafo ul li a {
+                text-decoration: none;
+                color: #f2f2f2;
+                transition: all 1s ease;
+            }
+            
+            aside .parrafo ul li a:hover {
+                color: #EF6616;
+                opacity: 1;
+            }
+            
+            aside .parrafo p {
+                line-height: 27px;
+            }
+            
+            footer {
+                width: 100%;
+                margin: 20px 0;
+                background: #05132D;
+                color: #fff;
+                opacity: .9;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                transition: background 1s ease;
+            }
+            
+            footer:hover {
+                background: #23001E;
+            }
+            
+            footer .redes-sociales a {
+                color: #f2f2f2;
+                text-decoration: none;
+                text-align: center;
+                margin-right: 20px;
+                transition: color 1s ease-out;
+            }
+            
+            footer .redes-sociales a:hover {
+                color: #EF6616;
+                font-weight: 900;
+            }
+            
+            @media screen and (max-width:1065px) {
+                header .menu a {
+                    border: none;
+                    background: none;
+                    transition: color .7s ease;
+                }
+                header .menu a:hover {
+                    background: none;
+                    border: none;
+                    color: #0ECC91;
+                }
+                header .menu a:active {
+                    background: none;
+                    border: none;
+                }
+                .main {
+                    width: 100%;
+                }
+                aside {
+                    width: 100%;
+                    flex-direction: row;
+                }
+                aside {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                aside .ad {
+                    width: 50%;
+                }
+            }
+            
+            @media screen and (max-width:1047px) {
+                header {
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+                header .menu {
+                    width: 100%;
+                    background: #05132D;
+                    text-align: center;
+                }
+                header .menu a {
+                    margin: 0 20px;
+                }
+                header .imagen {
+                    margin-bottom: 20px;
+                }
+                footer {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                footer .autor {
+                    order: 2;
+                }
+                footer .redes-sociales {
+                    order: 1;
+                    margin-bottom: 20px;
+                }
+            }
+            
+            @media screen and (max-width:600px) {
+                aside {
+                    display: none;
+                }
+                header .menu a {
+                    padding: 0;
+                }
+                header .imagen img {
+                    width: 420px;
+                }
+            }
+            
+            @media screen and (max-width:476px) {
+                aside {
+                    display: none;
+                }
+                header .menu a {
+                    padding: 0;
+                }
+                header .imagen img {
+                    width: 420px;
+                }
+            }
+            
+            @media screen and (max-width:448px) {
+                aside {
+                    display: none;
+                }
+                header .menu a {
+                    padding: 0;
+                }
+                header .imagen img {
+                    width: 310px;
+                }
+            }
+            
+            @media screen and (max-width:375px) {
+                header .menu a {
+                    margin: 0 10px;
+                    font-size: 17px;
+                }
+                footer .redes-sociales a {
+                    text-decoration: none;
+                    transition: none;
+                    font-size: 12px;
+                    margin-right: 12px;
+                }
+                footer .redes-sociales a:hover {
+                    color: #df4c27;
+                    font-weight: normal;
+                }
+            }
